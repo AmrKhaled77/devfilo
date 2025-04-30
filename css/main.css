@@ -1,0 +1,422 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+body:has(#home:target)  #nav1::after,
+body:has(#about:target)  #nav2::after,
+body:has(#services:target)  #nav3::after,
+body:has(#protfolio:target)  #nav4::after,
+body:has(#dropdown:target)  #nav5::after,
+body:has(#Contact:target)  #nav6::after
+
+
+
+{
+ 
+  width: 78%;
+}
+.home{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.642) ,rgba(0, 0, 0, 0.544) ) ,  url("../images/hero-img.jpg");
+    background-size:     cover;  
+    background-position: center center;
+}
+
+
+.navbar a.navbar-brand{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+ 
+} 
+
+.navbar .nav-link {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 8px; 
+  }
+
+  
+
+
+
+
+  .navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: white; 
+    transition: width 0.3s ease;
+  }
+
+
+  
+  .navbar .nav-link:hover::after,
+  .navbar .nav-link.active::after {
+    width: 78%;
+  }
+
+
+
+
+
+
+
+.home h1{
+    font-size: 70px;
+    color: white;
+}
+
+
+
+
+.progress{
+    border-radius: 0;
+    height: 10px;
+}
+
+
+
+
+
+.title h2::before{
+    content: "";
+    position: absolute;
+   
+   
+    width: 55px;
+    height: 3px;
+    background-color: #3594FF;
+left: 50%;
+transform: translateX(-50%);
+bottom: -15px;
+    
+}
+
+
+
+/* start Resume */
+
+
+
+.Resume .data::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -8px;
+    top: 7px;
+    
+    
+    background: white;
+    border: 2px solid #3594FF;
+}
+.Resume .data::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    
+    left: -0.5px;
+    top: 22px;
+    
+    
+    background: white;
+    background-color:  #3594FF;
+    
+}
+
+/* end Resume */
+
+
+
+
+
+/* start Services */
+
+
+
+.Services .circle{
+    
+    width: 70px;
+    height: 70px;
+    background-color: #0078FF;
+    border-radius: 50%;
+}
+
+
+
+.Services .bg{
+    
+   
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #0078FF;
+    z-index: 1; 
+    border-radius: 2rem; 
+    
+}
+
+.blue-card{
+    transition: 0.2s;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+  width: 100%;
+  height: 100%;
+    
+    
+    background-color: #0078FF;
+}
+
+
+.CARD{
+    transition: 0.2s;
+}
+.ITEM:hover .CARD{
+    transform: translateY(-12px);
+
+
+}
+.ITEM:hover .blue-card{
+    transform: translateY(-5px);
+
+
+}
+
+
+.stats{
+    height: 50vh;
+    
+    background-image: linear-gradient(#0077ffa0), url("../images/stats-bg.jpg") ;
+  
+    background-position: center;
+    background-size: cover;
+}
+
+
+.stats .num{
+    font-size: 48px;
+    display: block;
+    color: white;
+    font-weight: 700;
+}
+
+.stats .text{
+    font-weight: 700;
+    color: 
+color-mix(in srgb, white, transparent 40%);
+}
+
+
+
+/* end Services */
+
+
+.hover-item{
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+    width: 90%;
+    margin: auto;
+    background-color: #f9f4f3ba;
+  bottom: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+
+.Portfolio .item:hover .hover-item{
+    bottom: 20px;
+    opacity: 1;
+}
+
+
+
+.hover-item i{
+    color: gray;
+   transition: 0.3s;
+   cursor: pointer;
+}
+.hover-item i:hover{
+   color: #3594FF;
+}
+
+.nav-pills .nav-link.active {
+   color: #0078FF;
+   background-color: transparent;
+  }
+.nav-pills button {
+    
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    color: #4E4E4E;
+
+  }
+
+
+  .accordion-header button:hover{
+    color: #3594FF;
+  }
+  .accordion-header button{
+transition: 0.5s;
+  }
+
+
+  .accordion-button:not(.collapsed) {
+    background-color: white; /* Example: blue background when opened */
+    color: #3594FF; /* Text becomes white */
+    border: 0;
+  }
+
+
+
+  .accordion-item:first-of-type>.accordion-header .accordion-button {
+     border-top-left-radius: 0; 
+     border-top-right-radius: 0; 
+     border: 0;
+}
+
+.accordion-button:focus {
+    
+    box-shadow: 0 0 transparent ;
+}
+
+
+
+.accordion-collapse {
+    transition: height 0.4s ease; 
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    
+    transform: rotate(-90deg);
+    transition: height 0.4s ease; 
+}
+
+
+.testimonials{
+    height: 60vh;
+    background-image: linear-gradient(#0077ffa0), url("../images/assets/asset\ 15.jpeg") ;
+background-position: center;
+background-size: cover;
+}
+
+
+
+
+.CARD .icon{
+    border: 2px solid #3594FF;
+}
+::placeholder {
+    color: #999 !important; 
+    
+  }
+
+
+  .fotter{
+    height: 25vh;
+    background-color: #0078FF;
+  }
+
+  .icons .icon{
+    border: 1px solid rgba(255, 255, 255, 0.645);
+    background-color: transparent;
+    transition: 0.2s;
+  }
+  .icons .icon:hover i{
+   color: white;
+    opacity: 1;
+
+  }
+  .icons .icon:hover{
+    border: 1px solid white;
+
+  }
+  .icons .icon i{
+    transition: 0.2s;
+   color: rgba(255, 255, 255, 0.408) ;
+   opacity: 0.5;
+   
+
+  }
+
+
+  .CARD .icon{
+    transition: 0.2s;
+    
+  }
+  .CARD .icon {
+    background-color: white;
+    transition: 0.2s;
+    
+  }
+  .CARD .item:hover .icon {
+background-color: #3594FF;
+  }
+  .CARD .item:hover i{
+    color: white;
+
+  }
+  .CARD .item i{
+    
+    color: #3594FF;
+
+  }
+
+
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; 
+    background-color: #fff; 
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    border: none;
+    margin: 0 5px; 
+  }
+  
+  .carousel-indicators .active {
+    opacity: 1;
+    background-color: white; 
+  }
+
+  .carousel-item {
+    transition: 1s;
+}
+
+
+
+
+
+  @media screen and (max-width: 995px) {
+    h1 {
+        text-align: center;
+        width: 100%;
+      
+      font-size: 48px !important;
+      
+    }
+  }
+  @media screen and (max-width: 550px) {
+    h1 {
+        text-align: center;
+        width: 100%;
+      
+      font-size: 28px !important;
+      
+    }
+  }
