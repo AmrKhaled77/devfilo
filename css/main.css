@@ -410,6 +410,7 @@ background-color: #3594FF;
       font-size: 48px !important;
       
     }
+    
   }
   @media screen and (max-width: 550px) {
     h1 {
@@ -419,4 +420,20 @@ background-color: #3594FF;
       font-size: 28px !important;
       
     }
+
+    .stats{
+      height: 100vh;
+      
+      
   }
+  }
+  @media screen and (max-width: 767px) {
+   
+
+    .stats{
+      height: 100vh;
+      
+      
+  }
+  }
+ 

@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <title>Document</title>
+    
 </head>
 <body>
+ 
 
     <nav class="navbar navbar-expand-lg position-fixed  w-100 z-3 " style="background-color: black;" data-bs-theme="dark">
         <div class="container">
@@ -98,9 +100,30 @@
           I am Morgan Freeman
         </h1>
       
-        <span class="position-absolute top-50 start-50 translate-middle text-white fs-1 fw-bold pt-5" style="margin-top: 60px;">
-          Developer
+       
+        <span id="typed" class="position-absolute top-50 start-50 translate-middle text-white fs-1 fw-bold pt-5" style="margin-top: 60px; ">
+        
+        
         </span>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+       
+       <script>
+         var typed = new Typed('#typed', {
+          strings: ['Photographer', 'Designer','Freelancer','Developer'],
+          typeSpeed: 70,
+          
+          backDelay: 1000,
+          backSpeed: 50,
+         
+          loop: true,
+          loopCount: Infinity,
+           showCursor: true
+           
+      
+      });
+       </script>
 
       </div>
 
@@ -468,25 +491,39 @@
           
 
           </div>
-          <div class="stats my-5 d-flex justify-content-evenly align-items-center">
+          <div class="stats my-5 d-flex justify-content-center align-items-center ">
 
+<div class="row ">
+  <div class="col-12 col-md-6 col-lg-3  bg-black ">
+    <div class="item p-5">
+      <span class="num" style="font-size: 60px;">123</span>
+      <span class="text">Clients</span>
+    </div>
+   </div>
+   <div class="col-12 col-md-6 col-lg-3  bg-black   ">
+    <div class="item p-5">
+      <span class="num" style="font-size: 60px;">123</span>
+      <span class="text">Clients</span>
+    </div>
+   </div>
+   <div class="col-12 col-md-6 col-lg-3  bg-black   ">
+    <div class="item p-5">
+      <span class="num" style="font-size: 60px;">123</span>
+      <span class="text">Clients</span>
+    </div>
+   </div>
+   <div class="col-12 col-md-6 col-lg-3  bg-black   ">
+    <div class="item p-5">
+      <span class="num" style="font-size: 60px;">123</span>
+      <span class="text">Clients</span>
+    </div>
+   </div>
+  
 
-            <div class="item">
-              <span class="num">123</span>
-              <span class="text">Clients</span>
-            </div>
-            <div class="item">
-              <span class="num">134</span>
-              <span class="text">Clients</span>
-            </div>
-            <div class="item">
-              <span class="num">1546</span>
-              <span class="text">Clients</span>
-            </div>
-            <div class="item">
-              <span class="num">111</span>
-              <span class="text">Clients</span>
-            </div>
+</div>
+       
+         
+        
             
           </div>
 
@@ -1328,8 +1365,11 @@ Non consectetur a erat nam at lectus urna duis?
 
 
 
-    
+
 
     <script src="./bootstrip/bootstrap.bundle.min.js"></script>
+    
+   
+
 </body>
 </html>
